@@ -12,20 +12,20 @@ public class ForUebung : MonoBehaviour
         {
             string ausgabe = "";
 
-            ausgabe = Minuszeichen(ausgabe, zeile);
+            ausgabe = GeneriereMinuszeichen(ausgabe, zeile);
 
             for(int sterne = 1; sterne <= 2 * zeile -1; sterne++)
             {
                 ausgabe += "*";
             }
 
-            ausgabe = Minuszeichen(ausgabe, zeile);
+            ausgabe = GeneriereMinuszeichen(ausgabe, zeile);
 
             Debug.Log(ausgabe);
         }
     }
 
-    private string Minuszeichen(string ausgabe, int zeile)
+    private string GeneriereMinuszeichen(string ausgabe, int zeile)
     {
         for (int minus = 1; minus <= zeilenAnzahl - zeile; minus++)
         {
